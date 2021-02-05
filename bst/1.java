@@ -1,5 +1,3 @@
-package play;
-
 public class Node {
     int val;
     public Node left;
