@@ -16,16 +16,5 @@ public class BinarySearchTree {
         if (val < node.val) node.left = insertRecursively(node.left, val);
         return node;
     }
-    public void inorder() {
-        System.out.println("Inorder traverse start");
-        if (root == null) return;
-        inorderRecursively(root);
-        System.out.println("Inorder traverse end");
-    }
-    private void inorderRecursively(Node node) {
-        if (node == null) return;
-        inorderRecursively(node.left);
-        System.out.println(node.val);
-        inorderRecursively(node.right);
-    }
+
 }
