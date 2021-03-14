@@ -42,8 +42,8 @@ class Solution {
                 ans.append(s2.charAt(j++));
             }
         }
-        if (i != n1) ans.append(s1.substring(i));
-        if (j != n2) ans.append(s2.substring(j));
+        ans.append(s1.substring(i));
+        ans.append(s2.substring(j));
         return ans.toString();
     }
     
